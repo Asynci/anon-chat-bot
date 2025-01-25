@@ -6,7 +6,7 @@ meta:
 build:
   image: golang:1.22
 run:
-  image: alpine:latest  # Используем легковесный образ для запуска
-  command: ./bin/bot     # Команда для запуска вашего приложения
+  image: alpine:latest
+  command: ./bin/bot
   persistenceMount: /data
   containerPort: 80
