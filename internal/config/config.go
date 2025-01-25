@@ -12,7 +12,6 @@ type Config struct {
 
 func Load() (*Config, error) {
 	ID, _ := strconv.Atoi(os.Getenv("TELEGRAM_CHANNEL_ID"))
-	print(os.Getenv("TELEGRAM_BOT_TOKEN"))
 	return &Config{
 		TelegramToken: os.Getenv("TELEGRAM_BOT_TOKEN"),
 		ChannelID:     int64(ID),
